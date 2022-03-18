@@ -26,3 +26,6 @@ async def start_cmd(bot, msg):
         text=START_MESSAGE.format(msg.from_user.mention),
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝖣𝖾𝗏 ⚙️", url="t.me/pushpa_Reju")
+            ]]
+            )
+        )
