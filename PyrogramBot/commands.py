@@ -25,7 +25,17 @@ async def start_cmd(bot, msg):
     await msg.reply_text(
         text=START_MESSAGE.format(msg.from_user.mention),
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton("𝖣𝖾𝗏 ⚙️", url="t.me/pushpa_Reju")
+            InlineKeyboardButton("𝖣𝖾𝗏 ⚙️", url="t.me/pushpa_Reju"),
+            InlineKeyboardButton("𝖧𝗈𝗐𝖳𝗈𝖴𝗌𝖾", callback_data="use") 
             ]]
             )
         )
+
+
+
+@Client.on_callback_query()
+async def cb(bot, msg):
+    if msg.data == "use":
+        await msg.answer("""It’s simple to use me. Just send any photo or video below 5 MB and you will get the telegraph link
+""", show_alert=True)
+
