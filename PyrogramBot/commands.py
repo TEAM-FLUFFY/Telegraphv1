@@ -15,7 +15,7 @@ START_MESSAGE= """
 @Client.on_message(filters.command("start"))
 async def start_cmd(bot, msg):
     await msg.reply_photo(
-        photo="https://telegra.ph/file/b5267f29b7c2eb523b516.jpg"
+        photo="https://telegra.ph/file/2ad808f3e0ed97575a5c1.jpg"
     )
 
 
